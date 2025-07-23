@@ -5,7 +5,7 @@
 # export NOME="seu_nome"
 # export TOKEN="seu_token_github"
 # Verifica se a variável NOME está definida
-# Usar o s export acima no terminal para definir as variaveis
+# Usar os export acima no terminal para definir as variaveis
 
 if [ -z "$NOME" ]; then
   echo "🚫 ERRO: Variável de ambiente NOME não definida."
