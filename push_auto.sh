@@ -4,8 +4,10 @@
 # As variáveis NOME e TOKEN devem ser definidas fora do script, assim:
 # export NOME="seu_nome"
 # export TOKEN="seu_token_github"
-# Verifica se a variável NOME está definida
+# usar o export para definir as variáveis ou então usar o comando:
+# git remote set-url origin https://<TOKEN>@github.com/<USUARIO>/<REPOSITORIO>.git
 
+# Verifica se a variável NOME está definida
 if [ -z "$NOME" ]; then
   echo "🚫 ERRO: Variável de ambiente NOME não definida."
   echo "Defina com: export NOME=\"seu_nome\""
