@@ -61,7 +61,7 @@ if [ -z "$LOCAL_USER" ] || [ -z "$LOCAL_EMAIL" ]; then
 else
   printf "Usuário Git local já configurado como: %s <%s>\n" "$LOCAL_USER" "$LOCAL_EMAIL"
 fi
-
+# comentario
 printf "\n============================\n"
 printf "Passo 4: Adicionar arquivos\n"
 printf "============================\n\n"
