@@ -7,17 +7,15 @@
 # usar o export para definir as variáveis ou então usar o comando:
 # git remote set-url origin https://<TOKEN>@github.com/<USUARIO>/<REPOSITORIO>.git
 
-#====================================================
-# Verificando se uma variavél de ambiente esta
-# ativa. se estiver, as outras provavelmente estão
-#===================================================
-if [ -z "$AMBIENTE" ]; then
-    printf "a variavél não está definida, provavelmente as outras também não estão ativa\n"
-    else
-        printf "variavél ativa, o terminal não foi fechado então talvez todas as variavéis estão definidas com o export\n"
+#===========================================================
+# Verificando se uma variavéis de ambiente estão ativas
+#===========================================================
+if [ -z "$ENV_ON" ]; then
+  printf "⚠️  Atenção: .env não está carregado. Rode 'source ~/.env' antes de continuar.\n"
+  exit 1
+else
+  printf "✅ .env carregado com sucesso: ENV_ON='%s'\n" "$ENV_ON"
 fi
-
-
 
 # Verifica se a variável NOME está definida
 if [ -z "$NOME" ]; then
