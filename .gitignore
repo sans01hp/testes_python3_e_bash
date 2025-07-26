@@ -1,7 +1,8 @@
 # ========================================
 # Ignorar arquivos de ambiente
 # ========================================
-.env              # Arquivo com variáveis sensíveis (tokens, senhas)
+.env              # Arquivo com variáveis sensíveis
+*.env             # Outros arquivos .env (ex: prod.env, dev.env, pass.env)
 
 # ========================================
 # Ignorar logs

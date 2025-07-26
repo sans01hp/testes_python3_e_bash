@@ -11,10 +11,12 @@
 # Verificando se uma variavéis de ambiente estão ativas
 #===========================================================
 if [ -z "$ENV_ON" ]; then
-  printf "⚠️  Atenção: .env não está carregado. Rode 'source ~/.env' antes de continuar.\n"
-  exit 1
-else
-  printf "✅ .env carregado com sucesso: ENV_ON='%s'\n" "$ENV_ON"
+    printf "\033[1;33m[AVISO] Variáveis de ambiente não carregadas.\033[0m\n"
+    printf "Renomeie o arquivo \033[1m.env.example\033[0m para \033[1m.env\033[0m\n"
+    printf "Atribua os valores correspondentes ao seu  usuario e token do github\nexecute: \033[1msource .env\033[0m\n"
+    exit 1
+  else
+    printf "\033[1;92m�� .env carregado com sucesso: ENV_ON='%s'\033[0m\n" "$ENV_ON"
 fi
 
 # Verifica se a variável NOME está definida
