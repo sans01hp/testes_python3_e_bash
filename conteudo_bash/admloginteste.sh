@@ -16,24 +16,24 @@ admemail="adm@hotmail.com"
 senhaadm="adm123"
 login() {
 
-printf "{CYAN}Digite seu usuario{RESET}:\n"
-read str{user}
+printf "${CYAN}Digite seu usuario${RESET}:\n"
+read user
 
-printf "{CYAN}Digite seu email{RESET}\n:"
-read email
+printf "${CYAN}Digite sua senha${RESET}:\n"
+read -s senha
 
-printf "{CYAN}Digite sua senha{RESET}:\n"
-read -s senha7
-
-while [[ -z "$email" ]] || [[ ! "$email" =~ ^[a-zA-Z0-9]@[a-zA-Z0-9].com$ ]];do
-  printf "{RED}Email vazio ou invalido.{GREEN}Digite nocamente{RESET}:\n"
+printf "${CYAN}Digite seu email${RESET}:\n"
+rea email
+while [[ -z "$email" ]] || [[ ! "$email" =~ ^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.com$ ]];do
+  printf "{RED}Email vazio ou invalido.{GREEN}Digite novamente{RESET}:\n"
   read email
 done
 
-if [[ "$email" -eq "$admemail" ]]
-   printf "{RED}email do adm{RESET}\n"
+if [[ "$email" == "$admemail" ]] &&  [[ "$senha" == "$senhaadm" ]] && \
+   [[ "$user" == "$adm" ]];  then
+   printf "${RED}Bem vindo adm${RESET}\n"
    else
-      printf "{YELLOW}Email diferente do adm{RESET}\n"
+      printf "${YELLOW}Usuario sem root${RESET}\n"
 fi
 
 }
