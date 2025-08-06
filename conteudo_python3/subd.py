@@ -1,11 +1,9 @@
 #!/user/bin/env python3
 
-import requests
-import colorama
+from libs import requests
+from libs import colorama
 import os
 import sys
-
-dominio = input("digite o dominio:")
 
 
 dominio = input("Digite o domínio: ")
