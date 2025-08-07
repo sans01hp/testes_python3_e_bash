@@ -1,4 +1,3 @@
-# testes_shellscript
+# comandos_para_aprendizado
 
-Os scripts nesse repositório serão comentados com intuito de estudo e revisão, explicando o que o codigo esta fazendo.
-a partir disso você pode tentar aprender um pouco sobre bash e python3 
+Os scripts nesse repositório são para estudo e revisão, ajudando no aprendizado de bash e python3.
