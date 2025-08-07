@@ -23,7 +23,7 @@ printf "${CYAN}Digite sua senha${RESET}:\n"
 read -s senha
 
 printf "${CYAN}Digite seu email${RESET}:\n"
-rea email
+read  email
 while [[ -z "$email" ]] || [[ ! "$email" =~ ^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.com$ ]];do
   printf "{RED}Email vazio ou invalido.{GREEN}Digite novamente{RESET}:\n"
   read email
